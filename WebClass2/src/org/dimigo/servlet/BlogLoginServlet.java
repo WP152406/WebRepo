@@ -41,7 +41,7 @@ public class BlogLoginServlet extends HttpServlet {
 		
 		String id = request.getParameter("id");
 		
-		if("test@naver.com".equals(id))
+		if("test@naver.com".equals(id)) 
 		{
 			HttpSession session = request.getSession();
 			session.setAttribute("id", id);
