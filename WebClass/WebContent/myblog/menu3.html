@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <script>
+       function menu_over(e) {
+          e.setAttribute("class", "nav-item active");
+          // <li class="nav-item active>"         
+          
+       }
+       function menu_out(e) {
+          e.setAttribute("class", "nav-item");
+          // <li class="nav-item active>"         
+       }
+    </script>
+    
+    <style>
+    div.container {
+       padding-top: 30px
+    }
+    </style>
+  
+  </head>
+  <body>
+  <!-- 메뉴바 -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <a class="navbar-brand" href="index.html">김성수blog</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+   
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+            <a class="nav-link" href="menu1.html">존경하는 인물<span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+           <a class="nav-link" href="menu2.html">좋아하는 음악</a>
+         </li>
+         <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+           <a class="nav-link" href="menu3.html">좋아하는 음식</a>
+         </li>
+       </ul>
+       <form class="form-inline my-2 my-lg-0" id="loginForm">
+         <input class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="ID" id="id" required>
+         <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password" id="password" required>
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+       <a href="signup.html" class="btn btn-outline-success my-2 my-sm-0" role="button">Signup</a>
+       
+       </form>
+     </div>
+   </nav>
+    <div class="container">
+       <h1>좋아하는 음식</h1>
+       <br><br>
+       <h4>햄버거</h4>
+       <br>
+       <img src="image/hmb1.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="400">
+       <br><br>
+       <p>햄버거(hamburger)는 쇠고기를 갈아 납작하게 만든 패티(patty)를 그릴이나 직화로 구워 여러 채소와 함께 빵 사이에 끼워 먹는 샌드위치의 일종으로 미국 내에서 선호도가 높은 음식 중 하나이다. 햄버거를 언제부터 먹기 시작했는지는 명확하게 알려진 기록이 없으며, 오늘날의 형태의 햄버거를 먹기 시작한 것은 여러 가지 설이 있지만 대략 1880년 이후로 추정된다. 취향에 따라 양상추, 토마토, 양파, 치즈, 피클 등을 빵 사이에 함께 끼워 넣고 토마토 케첩, 마요네즈, 머스터드 등의 소스를 바르기도 한다. 탄산음료나 감자튀김을 곁들여 먹는 미국의 대표적인 패스트푸드(fast food)이다.</p>
+       
+    </div>
+    
+    <!-- Modal 창 -->
+    <div class="modal" id="myModal">
+     <div class="modal-dialog" role="myModal">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">로그인 결과</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <p></p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+   <script src="../js/blogjs.js"></script>
+     
+  </body>
+</html>

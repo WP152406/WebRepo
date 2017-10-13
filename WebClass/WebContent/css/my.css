@@ -1,0 +1,16 @@
+<style>
+#menu {
+border: solid green;
+background
+-
+color: green;
+}
+ul li {
+display: inline;
+margin: 5px;
+font
+-
+weight: bold;
+color: yellow;
+}
+</style>
