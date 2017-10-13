@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../../../favicon.ico">
+
+        <title>Off Canvas Template for Bootstrap</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+      </head>
+
+      <body>
+
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">MyBlog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="menu.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="WhoAmI.html">네놈은 누구냐</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="know.html">할줄 아는거</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="interests.html">좋아 하는거</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="products.html">지금까지 만든거</a>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='login.html'" style="margin : 10px;">Login</button>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='register.html'">Register</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container" style = "margin-top : 70px">
+
+          <div class="row row-offcanvas row-offcanvas-right">
+
+            <div class="col-12 col-md-9">
+              <p class="float-right d-md-none">
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
+              </p>
+              <div class="jumbotron">
+                <br /><br />
+                <h1>안녕, 세상!</h1>
+                <p><strike>메뉴와 레이아웃이 바뀌지 않은건 기분탓이다.</strike></p>
+                Hello World! 딱 보면 알듯이 프로그래밍이 주 할일이다.
+              </div>
+              <div class="row">
+                <div class="col-6 col-lg-4" style = "background-color : #eeeeee; border : solid 2px black;">
+                  <h2>프로그래밍</h2>
+                  <ul>
+                    <li>
+                      C++
+                    </li>
+                    <li>
+                      JAVA
+                    </li>
+                    <li>
+                      Javascript
+                    </li>
+                    <li>
+                      GM:S
+                    </li>
+                    <li>
+                      Unity
+                    </li>
+                    <li>
+                      Node.js
+                    </li>
+                    <li>
+                      html / css
+                    </li>
+                  </ul>
+                  <strong>특히 GM:S 와 Unity를 한다.</strong>
+                  <p><a class="btn btn-secondary" href="http://blog.naver.com/PostList.nhn?blogId=jysa000&from=postList&categoryNo=44#" target = "_blank" role="button">게임 개발 일지 &raquo;</a></p>
+                </div><!--/span-->
+                <div class="col-6 col-lg-4"  style = "background-color : #eeeeee; border : solid 2px black;">
+                  <h2>작곡 / 악기</h2>
+                  <p>피아노, 오카리나, 단소 <small><strike>쳐 맞으면서 배웠다.</strike></small>, 리코더를 잘 다룬다. 가끔 새벽감성 돋으면 작곡을 하기도 한다.</p>
+                  <p><a class="btn btn-secondary" href="http://blog.naver.com/PostList.nhn?blogId=jysa000&from=postList&categoryNo=42" role="button">작곡 &raquo;</a></p>
+                </div><!--/span-->
+                <div class="col-6 col-lg-4"  style = "background-color : #eeeeee; border : solid 2px black;">
+                  <h2>소설 쓰기</h2>
+                  <p>중학교때부터 꾸준히 해오던 활동이다. 지금은 맛탱이가 가신 노트북에 대략 20편의 작품이 있는데, 하나 같이 30페이지를 넘긴게 드물다. 쓰다보면 아이디어가 고갈되서 그렇다.<br />
+                  요즘은 꾸준히 온라인 독스에 소설을 쓰고 있다. Google Docs는 최고다. Google 형님은 최고다. <small><strike>그러니까 내가 메인에 전 세계 구글을 박아놨지.</strike></small> </p>
+                  <p><a class="btn btn-secondary" href="http://blog.naver.com/PostList.nhn?blogId=jysa000&from=postList&categoryNo=47&parentCategoryNo=47" role="button">중딩때 쓰던 소설 (항마력 주의) &raquo;</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+            </div><!--/span-->
+
+            <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
+              <div class="list-group">
+                <a href="http://www.google.ru" class="list-group-item">구글RU</a>
+                <a href="http://www.google.uk" class="list-group-item">구글UK</a>
+                <a href="http://www.google.jp" class="list-group-item">구글JP</a>
+                <a href="http://www.google.kr" class="list-group-item">구글KR</a>
+                <a href="http://www.google.in" class="list-group-item">구글IN</a>
+                <a href="http://www.google.nz" class="list-group-item">구글NZ</a>
+                <a href="http://www.google.au" class="list-group-item">구글AU</a>
+                <a href="http://www.google.fr" class="list-group-item">구글FR</a>
+                <a href="http://www.google.cn" class="list-group-item">구글CN</a>
+              </div>
+            </div><!--/span-->
+          </div><!--/row-->
+
+          <hr>
+
+          <footer>
+            <p>&copy; Company 2017</p>
+          </footer>
+
+        </div><!--/.container-->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="../../../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../../../dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="offcanvas.js"></script>
+      </body>
+    </html>
