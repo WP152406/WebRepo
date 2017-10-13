@@ -38,8 +38,7 @@ function menu_out(e) {
   	
     <%-- 세션이 없는 경우 --%>
     <%
-    UserVo user = (UserVo)(session.getAttribute("user"));
-    if(user==null) {
+    if(session.getAttribute("id") == null) {
     %>
     	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass2/login.jsp">Sign in</a>
     	<span class="text-bold text-white">&nbsp; or &nbsp;</span>
@@ -51,7 +50,7 @@ function menu_out(e) {
 	    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 	    <li class="nav-item dropdown">
 	      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	    	<%=user.getName() %>님
+	    	김성수님 
 	      </a>
 	      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
 	      <form action="/WebClass2/logout" method = "get">

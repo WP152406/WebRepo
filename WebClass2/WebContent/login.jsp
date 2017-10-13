@@ -12,7 +12,7 @@
 <body>
 <div class="container">
 
-  <form class="form-signin" action="/WebClass2/login" method="post">
+  <form class="form-signin" action="/WebClass2/bloglogin" method="post">
     <h2 class="form-signin-heading">Please sign in</h2>
     
     <label for="inputEmail" class="sr-only">Email address</label>
@@ -39,12 +39,13 @@
 	<%
 	if("error".equals(request.getAttribute("msg"))) {
 	%>
+		document.getElementById("inputEmail").value = <%= request.getAttribute("w_id") %>;
+		
 		var myModal = $('#mymodal');
 		myModal.find('.modal-title').text('Login Error');
 		myModal.find('.modal-body').text('Wrong Id or Password error.');
 		myModal.modal();
 		
-		$('#inputEmail').val('<%=request.getAttribute("requestId")%>');
 		<% }%>
 </script>
 
